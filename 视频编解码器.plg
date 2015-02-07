@@ -1,0 +1,205 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 视频编解码器 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/视频编解码器.res" /d "NDEBUG" /d "_AFXDLL" "G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\视频编解码器.rc"" 
+Creating temporary file "C:\DOCUME~1\YUE-NA~1\LOCALS~1\Temp\RSP21.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/视频编解码器.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\AttackMethod.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\CodeInter.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\CodeOneIntra.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Countbit.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Dct.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\DCTVQ.CPP"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\DecodeDlg.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Display.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\EncodeDlg.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Getbits.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Getblk.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Gethdr.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\GetNC.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Getpic.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Getvlc.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Idct.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\IO.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\lable LBG.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\MainFrm.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Mot_est.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\MotionDlg.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\MultiNC.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\NCdialogue.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\NoiseAttack.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\OpenFiles.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\OutputVlc.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\P_AuthenGen.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Pred.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\ProgressBar.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\PropertyDlg.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\RateControl.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\RateControlDlg.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Recon.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Sarcode.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Store.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\VideoAttack.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\ViewNC.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\VQEncode.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\VQindexhuffman.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\WatermarkDlg.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\视频编解码器.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\视频编解码器Doc.cpp"
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\视频编解码器View.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\YUE-NA~1\LOCALS~1\Temp\RSP21.tmp"" 
+Creating temporary file "C:\DOCUME~1\YUE-NA~1\LOCALS~1\Temp\RSP22.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/视频编解码器.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\StdAfx.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\YUE-NA~1\LOCALS~1\Temp\RSP22.tmp"" 
+Creating temporary file "C:\DOCUME~1\YUE-NA~1\LOCALS~1\Temp\RSP23.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/视频编解码器.pdb" /machine:I386 /out:"Release/视频编解码器.exe" 
+".\Release\AttackMethod.obj"
+".\Release\CodeInter.obj"
+".\Release\CodeOneIntra.obj"
+".\Release\Countbit.obj"
+".\Release\Dct.obj"
+".\Release\DCTVQ.OBJ"
+".\Release\DecodeDlg.obj"
+".\Release\Display.obj"
+".\Release\EncodeDlg.obj"
+".\Release\Getbits.obj"
+".\Release\Getblk.obj"
+".\Release\Gethdr.obj"
+".\Release\GetNC.obj"
+".\Release\Getpic.obj"
+".\Release\Getvlc.obj"
+".\Release\Idct.obj"
+".\Release\IO.obj"
+".\Release\lable LBG.obj"
+".\Release\MainFrm.obj"
+".\Release\Mot_est.obj"
+".\Release\MotionDlg.obj"
+".\Release\MultiNC.obj"
+".\Release\NCdialogue.obj"
+".\Release\NoiseAttack.obj"
+".\Release\OpenFiles.obj"
+".\Release\OutputVlc.obj"
+".\Release\P_AuthenGen.obj"
+".\Release\Pred.obj"
+".\Release\ProgressBar.obj"
+".\Release\PropertyDlg.obj"
+".\Release\RateControl.obj"
+".\Release\RateControlDlg.obj"
+".\Release\Recon.obj"
+".\Release\Sarcode.obj"
+".\Release\StdAfx.obj"
+".\Release\Store.obj"
+".\Release\VideoAttack.obj"
+".\Release\ViewNC.obj"
+".\Release\VQEncode.obj"
+".\Release\VQindexhuffman.obj"
+".\Release\WatermarkDlg.obj"
+".\Release\视频编解码器.obj"
+".\Release\视频编解码器Doc.obj"
+".\Release\视频编解码器View.obj"
+".\Release\视频编解码器.res"
+]
+Creating command line "link.exe @"C:\DOCUME~1\YUE-NA~1\LOCALS~1\Temp\RSP23.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AttackMethod.cpp
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\AttackMethod.cpp(62) : warning C4101: 'nTime' : unreferenced local variable
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\AttackMethod.cpp(63) : warning C4101: 'B' : unreferenced local variable
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\AttackMethod.cpp(60) : warning C4101: 'm' : unreferenced local variable
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\AttackMethod.cpp(250) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\AttackMethod.cpp(244) : warning C4101: 'bitnum2' : unreferenced local variable
+CodeInter.cpp
+CodeOneIntra.cpp
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\CodeOneIntra.cpp(647) : warning C4244: '=' : conversion from 'const double' to 'int', possible loss of data
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\CodeOneIntra.cpp(1798) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+Countbit.cpp
+Dct.cpp
+DCTVQ.CPP
+DecodeDlg.cpp
+Display.cpp
+EncodeDlg.cpp
+Getbits.cpp
+Getblk.cpp
+Gethdr.cpp
+GetNC.cpp
+Getpic.cpp
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Getpic.cpp(543) : warning C4244: '=' : conversion from 'double' to 'unsigned char', possible loss of data
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Getpic.cpp(544) : warning C4244: '=' : conversion from 'double' to 'unsigned char', possible loss of data
+Getvlc.cpp
+Idct.cpp
+IO.cpp
+lable LBG.cpp
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\lable LBG.cpp(179) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\lable LBG.cpp(187) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\lable LBG.cpp(407) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\lable LBG.cpp(501) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+MainFrm.cpp
+Mot_est.cpp
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Mot_est.cpp(540) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Mot_est.cpp(430) : warning C4101: 'qcoeff_P' : unreferenced local variable
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Mot_est.cpp(433) : warning C4101: 'distortion' : unreferenced local variable
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Mot_est.cpp(418) : warning C4101: 'curr_mb' : unreferenced local variable
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Mot_est.cpp(419) : warning C4101: 'aa' : unreferenced local variable
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Mot_est.cpp(421) : warning C4101: 'Mode' : unreferenced local variable
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Mot_est.cpp(427) : warning C4101: 'block' : unreferenced local variable
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\Mot_est.cpp(549) : warning C4101: 'tempbit' : unreferenced local variable
+Generating Code...
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\MainFrm.cpp(87) : warning C4715: 'CMainFrame::PreCreateWindow' : not all control paths return a value
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\lable LBG.cpp(173) : warning C4700: local variable 'n' used without having been initialized
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\DCTVQ.CPP(370) : warning C4700: local variable 'qcoeff_ind' used without having been initialized
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\CodeOneIntra.cpp(1636) : warning C4700: local variable 'distortion' used without having been initialized
+Compiling...
+MotionDlg.cpp
+MultiNC.cpp
+NCdialogue.cpp
+NoiseAttack.cpp
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\NoiseAttack.cpp(75) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+OpenFiles.cpp
+OutputVlc.cpp
+P_AuthenGen.cpp
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\P_AuthenGen.cpp(47) : warning C4554: '^' : check operator precedence for possible error; use parentheses to clarify precedence
+Pred.cpp
+ProgressBar.cpp
+PropertyDlg.cpp
+RateControl.cpp
+RateControlDlg.cpp
+Recon.cpp
+Sarcode.cpp
+Store.cpp
+VideoAttack.cpp
+ViewNC.cpp
+VQEncode.cpp
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\VQEncode.cpp(38) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+VQindexhuffman.cpp
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\VQindexhuffman.cpp(41) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+G:\Disk D\Reserch work\My research\research-6 (Part-I)\Program\Video compression & watermarking\视频水印程序\VQindexhuffman.cpp(81) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+WatermarkDlg.cpp
+Generating Code...
+Compiling...
+视频编解码器.cpp
+视频编解码器Doc.cpp
+视频编解码器View.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+视频编解码器.exe - 0 error(s), 30 warning(s)
+</pre>
+</body>
+</html>

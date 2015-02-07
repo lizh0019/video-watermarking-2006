@@ -1,0 +1,820 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\视频编解码器.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\视频编解码器.ico"
+IDR_MYTYPE              ICON    DISCARDABLE     "res\\视频编解码器Doc.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\test2.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\HTML.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+BROWSEX                 BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+BROWSED                 BITMAP  DISCARDABLE     "res\\browsex1.bmp"
+BROWSEF                 BITMAP  DISCARDABLE     "res\\browsex2.bmp"
+BROWSEU                 BITMAP  DISCARDABLE     "res\\browsex3.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  26, 26
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_SAVWMARK
+    BUTTON      ID_SAVEMULTIMARK
+    SEPARATOR
+    BUTTON      ID_Encode
+    BUTTON      ID_Decode
+    BUTTON      ID_BRIDGEEXTRACT
+    SEPARATOR
+    BUTTON      ID_NORMALPLAY
+    BUTTON      ID_FASTPLAY
+    BUTTON      ID_SLOWPLAY
+    BUTTON      ID_RECORD
+    SEPARATOR
+    BUTTON      ID_MENUITEM32786
+    BUTTON      ID_2NC
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "Open(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "Save extracted watermark(&S)\tCtrl+S", ID_SAVWMARK
+        MENUITEM "Save multiple watermark(&M)\tCtrl+M", ID_SAVEMULTIMARK
+        MENUITEM SEPARATOR
+        MENUITEM "Print(&P)...\tCtrl+P",        ID_FILE_PRINT
+        MENUITEM "Print preview(&V)",           ID_FILE_PRINT_PREVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    END
+    POPUP "Encode/Decode(&Y)"
+    BEGIN
+        MENUITEM "Encode(&E)",                  ID_Encode
+        POPUP "Decoding Selcetion"
+        BEGIN
+            MENUITEM "H.263 Decode",                ID_Decode
+            MENUITEM SEPARATOR
+            MENUITEM "VQ Decode",                   ID_DECODEVQ
+            MENUITEM "Visual VQ Decode",            ID_VISUALDEC
+        END
+        POPUP "Extract Watermark "
+        BEGIN
+            MENUITEM "Basic VQ watermarking",       ID_MENUITEM32783
+            MENUITEM "Motion Vector watermarking",  ID_MVDM
+            MENUITEM "Multiple watermarking (VQ+MV)", ID_MultiExtract
+            MENUITEM "DCT polarity based watermarking", ID_DCTPARITY
+            MENUITEM "Robust and Fragile watermarking", ID_RFWM
+            MENUITEM "Robust and Semi-fragile watermarking", ID_ROBSEMIFRGWM
+            MENUITEM "Robust,Fragile and Digital fingerprint", ID_TRIMARK
+        END
+        MENUITEM "Media bridge extract",        ID_BRIDGEEXTRACT
+    END
+    POPUP "Calculate NC (&N)"
+    BEGIN
+        MENUITEM "Singal watermark evaluation", ID_MENUITEM32786
+        MENUITEM "Multipurpose watermark evaluation", ID_2NC
+        MENUITEM "Robust watermark and fingerprint evaluation", ID_RFVIEW
+    END
+    POPUP "Attack(&A)"
+    BEGIN
+        MENUITEM "Transmit in nosiy channel",   ID_BITERROR
+        MENUITEM "General image processings",   ID_MENUITEM32818
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "Tool Bar(&T)",                ID_VIEW_TOOLBAR
+        MENUITEM "State Bar(&S)",               ID_VIEW_STATUS_BAR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_Encode,              VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 202, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "About"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "Video Compression & Watermarking",IDC_STATIC,50,15,140,
+                    8,SS_NOPREFIX
+    LTEXT           "Copyright 2005 Version 2.1",IDC_STATIC,60,30,116,8
+    DEFPUSHBUTTON   "OK",IDOK,70,50,50,14,WS_GROUP
+    ICON            IDI_ICON2,IDC_STATIC,15,15,20,21
+END
+
+IDD_EncodeDlg DIALOG DISCARDABLE  0, 0, 313, 300
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Encode Setting"
+FONT 11, "宋体"
+BEGIN
+    LTEXT           "Input File Type",IDC_STATIC,46,18,63,8
+    COMBOBOX        IDC_InType,120,17,48,86,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "File Path",IDC_STATIC,47,35,49,8
+    EDITTEXT        IDC_InitDir,40,48,159,12,ES_AUTOHSCROLL
+    CONTROL         "Browse",IDC_Browse,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    201,48,44,14
+    LTEXT           "Totally",IDC_STATIC,54,84,31,8
+    EDITTEXT        IDC_MaxFrame,86,82,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Frames",IDC_STATIC,111,83,25,8
+    LTEXT           "Intra",IDC_STATIC,204,97,19,8
+    EDITTEXT        IDC_QPI,227,95,22,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_QP,228,116,22,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Inter ",IDC_STATIC,204,117,19,8
+    CONTROL         "P frame number between I frame",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,45,104,123,8
+    GROUPBOX        "Quantization Factor",IDC_STATIC,187,76,90,56
+    CONTROL         "Output encoding performance",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,147,124,10
+    EDITTEXT        IDC_Pnum,87,115,22,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "VQ Video Coding ",IDC_VQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,36,186,80,10
+    PUSHBUTTON      "Browse",IDC_OPENBOOK,257,215,41,14
+    EDITTEXT        IDC_BOOKNAME,100,215,152,14,ES_AUTOHSCROLL
+    GROUPBOX        "Vector Quantization  Mode",IDC_STATIC,15,168,291,110,
+                    BS_CENTER
+    CONTROL         "VQ Codeboob design",IDC_BOOKGENERATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,37,256,88,10
+    CONTROL         "Visual VQ Video Coding",IDC_VQ2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,136,185,104,10
+    CONTROL         "Visual VQ Codebook Desiagn",IDC_Visualbook,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,138,256,120,10
+    CONTROL         "Save compressed video as YUV file",IDC_Recoed,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,153,147,148,10
+    LTEXT           "Open codebook for VQ encoder",IDC_STATIC,34,201,148,8
+    EDITTEXT        IDC_EDIT1,100,234,152,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BUTTON3,257,234,42,14
+    LTEXT           "Traditional VQ:",IDC_STATIC,33,219,61,8
+    LTEXT           "DCT VQ:",IDC_STATIC,65,236,29,8
+END
+
+IDD_RateControl DIALOG DISCARDABLE  0, 0, 275, 203
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bit Rate Control"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Bite Rate Control",IDC_IfRateControl,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,78,19,71,10
+    LTEXT           "Channel Rate:",IDC_STATIC,72,40,47,8
+    EDITTEXT        IDC_Bitrate,121,38,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "bps",IDC_STATIC,163,39,13,8
+    GROUPBOX        "Frame Rate",IDC_STATIC,83,61,102,50,BS_CENTER
+    CONTROL         "25F/s",IDC_frame25,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,118,70,34,10
+    CONTROL         "30F/s",IDC_frame30,"Button",BS_AUTORADIOBUTTON,118,83,
+                    34,10
+    CONTROL         "10F/s",IDC_frame10,"Button",BS_AUTORADIOBUTTON,118,94,
+                    34,10
+    GROUPBOX        "Rate－Distorton Optimation",IDC_STATIC,72,129,138,48,
+                    BS_CENTER
+    CONTROL         "Basic R-DO Algorithms",IDC_BARDO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,100,143,90,10
+END
+
+IDD_Motion DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Motion Estimation"
+FONT 10, "System"
+BEGIN
+    CONTROL         "One Motion Vector/MB",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,44,18,115,10
+    CONTROL         "Four Motion Vectors/MB",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON,45,35,114,10
+END
+
+IDD_WatmarDlg DIALOG DISCARDABLE  0, 0, 315, 275
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Watermark embedding"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Open robust watermark",IDC_STATIC,24,40,76,8
+    EDITTEXT        IDC_EDIT1,22,53,133,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Browse",ID_OPENKEY,166,53,42,14
+    LTEXT           "Open fragile watermark ",IDC_STATIC,23,71,90,8
+    EDITTEXT        IDC_EDIT2,22,82,134,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Browse",IDC_2ndwatermark,167,82,41,14
+    COMBOBOX        IDC_COMBO2,20,120,182,64,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Please select a watermarking algorithm:",IDC_STATIC,22,
+                    108,163,8
+    ICON            IDI_ICON3,IDC_STATIC,193,215,20,20
+    EDITTEXT        IDC_EDIT4,54,217,130,14,ES_AUTOHSCROLL
+    LTEXT           "http://",IDC_HTTP,20,220,27,8
+    CONTROL         "Basic video watermarking",IDC_BASIC,"Button",
+                    BS_AUTORADIOBUTTON | BS_NOTIFY | WS_GROUP,22,23,112,10
+    CONTROL         "Generate codebook for watermarking",IDC_GEN,"Button",
+                    BS_AUTORADIOBUTTON | BS_NOTIFY,21,153,135,10
+    CONTROL         "Media Bridge Technology",IDC_MB,"Button",
+                    BS_AUTORADIOBUTTON | BS_NOTIFY,21,202,127,10
+    COMBOBOX        IDC_WMCBGEN,21,168,183,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CALCULATENC DIALOG DISCARDABLE  0, 0, 212, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calculate NC"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,28,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,111,157,50,14
+    LTEXT           "Calculate NC ",IDC_STATIC,78,15,45,8
+    LTEXT           "Original Watermark:",IDC_STATIC,18,30,66,8
+    PUSHBUTTON      "Open",IDC_BUTTON1,136,44,50,14
+    EDITTEXT        IDC_EDIT1,18,44,113,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Number of correctly extracted bits=",IDC_STATIC,20,71,
+                    115,8
+    EDITTEXT        IDC_EDIT2,137,69,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Number of wrongly extracted bits=",IDC_STATIC,21,89,112,
+                    8
+    EDITTEXT        IDC_EDIT3,137,87,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Number of total bits=",IDC_STATIC,66,107,69,8
+    EDITTEXT        IDC_EDIT4,137,104,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "NC=",IDC_STATIC,120,125,15,8
+    EDITTEXT        IDC_EDIT5,137,122,40,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_CALCULATENC2 DIALOG DISCARDABLE  0, 0, 287, 224
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calculate NC for multipurpose watermark"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,66,203,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,180,203,50,14
+    LTEXT           "Original Watermark 1:",IDC_STATIC,55,38,72,8
+    PUSHBUTTON      "Open",IDC_BUTTON1,173,52,50,14
+    EDITTEXT        IDC_EDIT1,55,51,113,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Number of correctly extracted bits:",IDC_STATIC,20,128,
+                    113,8
+    EDITTEXT        IDC_EDIT2,142,126,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Number of wrongly extracted bits:",IDC_STATIC,21,146,
+                    110,8
+    EDITTEXT        IDC_EDIT3,142,143,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Number of total bits:",IDC_STATIC,66,164,67,8
+    EDITTEXT        IDC_EDIT4,142,161,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "NC:",IDC_STATIC,120,182,13,8
+    EDITTEXT        IDC_EDIT5,142,179,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Original Watermark 2:",IDC_STATIC,55,69,72,8
+    PUSHBUTTON      "Open",IDC_BUTTON2,173,83,50,14
+    EDITTEXT        IDC_EDIT6,55,83,113,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Calculate NCs for Multipurpose watermark ",IDC_STATIC,
+                    59,15,139,8
+    LTEXT           "Watermark1",IDC_STATIC,142,114,41,8
+    LTEXT           "Watermark2",IDC_STATIC,187,114,41,8
+    EDITTEXT        IDC_EDIT7,187,126,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT8,187,143,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9,187,161,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT10,188,179,40,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_ATTACK DIALOG DISCARDABLE  0, 0, 210, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Noisy Attack"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "Attack!",IDOK,137,117,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,165,50,14
+    LTEXT           "Attack-----Video Transmit in Noisy Channel",IDC_STATIC,
+                    24,21,136,8
+    LTEXT           "Open the compressed video to be attacked :",IDC_STATIC,
+                    20,40,143,8
+    EDITTEXT        IDC_EDIT1,19,53,93,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Select Bit Error Rate(BER)",IDC_STATIC,43,84,86,8
+    GROUPBOX        "BER",IDC_STATIC,12,97,114,51,BS_CENTER
+    CONTROL         "10^(-4)",IDC_MINERROR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,28,108,37,10
+    CONTROL         "5×10^(-4)",IDC_MIDERROR,"Button",BS_AUTORADIOBUTTON,28,
+                    121,45,10
+    CONTROL         "10×10^(-4)",IDC_HIGHERROR,"Button",BS_AUTORADIOBUTTON,
+                    28,134,49,10
+    PUSHBUTTON      "Open",IDC_ATTACKOPEN,118,53,37,14
+END
+
+IDD_NCVIEW DIALOG DISCARDABLE  0, 0, 228, 195
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View NC values"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,44,171,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,137,171,50,14
+    LTEXT           "NC values for Robust watermark && Digital fingerprint",
+                    IDC_STATIC,29,15,170,8
+    LTEXT           "Total frame number:",IDC_STATIC,70,37,66,8
+    EDITTEXT        IDC_TotalFrame,142,35,38,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Watermarking mimimum segment:",IDC_STATIC,25,55,113,8
+    EDITTEXT        IDC_WMS,142,52,38,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "NC values",IDC_STATIC,94,73,35,8
+    CONTROL         "List1",IDC_NCLIST1,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,21,84,187,79
+END
+
+IDD_IMPROATTACK DIALOG DISCARDABLE  0, 0, 231, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Image Processing Attacks"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Attacks on watermarked video",IDC_STATIC,59,19,98,8
+    LTEXT           "Format:",IDC_STATIC,14,43,26,8
+    COMBOBOX        IDC_COMBO1,44,41,63,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,113,41,59,13,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Browse",IDC_OPENYUV,175,40,40,14
+    GROUPBOX        "Attack Methods",IDC_STATIC,15,65,195,56,BS_CENTER
+    LTEXT           "Stength Control:",IDC_STATIC,23,133,53,8
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,18,143,128,15
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    23,165,180,14
+    CONTROL         "Media filter",IDC_FILTER,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,27,75,53,10
+    CONTROL         "Image Blur",IDC_BLUR,"Button",BS_AUTORADIOBUTTON,27,89,
+                    52,10
+    CONTROL         "Frame Rotation",IDC_ROTATE,"Button",BS_AUTORADIOBUTTON,
+                    27,103,66,10
+    CONTROL         "Frame Crop(1/4)",IDC_CROP,"Button",BS_AUTORADIOBUTTON,
+                    127,76,68,10
+    CONTROL         "Add Noise",IDC_NOISE,"Button",BS_AUTORADIOBUTTON,127,89,
+                    49,10
+    PUSHBUTTON      "Attack",IDC_ATTACK,35,190,59,14
+    LTEXT           "Static",IDC_TEXT,156,147,59,8
+    PUSHBUTTON      "Cancel",IDC_CANCEL,125,190,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "视频编解码器 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "视频编解码器\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "视频编解码器.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "视频编解码器 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_EncodeDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_RateControl, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_Motion, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_WatmarDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_CALCULATENC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_CALCULATENC2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 217
+    END
+
+    IDD_ATTACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_NCVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_IMPROATTACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_EncodeDlg DLGINIT
+BEGIN
+    IDC_InType, 0x403, 8, 0
+0x5559, 0xce56, 0xbcc4, 0x00fe, 
+    IDC_InType, 0x403, 8, 0
+0x6172, 0xd077, 0xc1f2, 0x00d0, 
+    IDC_InType, 0x403, 9, 0
+0x6973, 0x2066, 0xf2d0, 0xd0c1, "\000" 
+    0
+END
+
+IDD_WatmarDlg DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 28, 0
+0x5156, 0x6220, 0x7361, 0x6465, 0x7620, 0x6469, 0x6f65, 0x7720, 0x7461, 
+0x7265, 0x616d, 0x6b72, 0x6e69, 0x0067, 
+    IDC_COMBO2, 0x403, 28, 0
+0x564d, 0x6220, 0x7361, 0x6465, 0x7620, 0x6469, 0x6f65, 0x7720, 0x7461, 
+0x7265, 0x616d, 0x6b72, 0x6e69, 0x0067, 
+    IDC_COMBO2, 0x403, 28, 0
+0x754d, 0x746c, 0x7069, 0x656c, 0x7620, 0x6469, 0x6f65, 0x7720, 0x7461, 
+0x7265, 0x616d, 0x6b72, 0x6e69, 0x0067, 
+    IDC_COMBO2, 0x403, 38, 0
+0x4344, 0x2054, 0x6f70, 0x616c, 0x6972, 0x7974, 0x6220, 0x7361, 0x6465, 
+0x7620, 0x6469, 0x6f65, 0x7720, 0x7461, 0x7265, 0x616d, 0x6b72, 0x6e69, 
+0x0067, 
+    IDC_COMBO2, 0x403, 33, 0
+0x6f52, 0x7562, 0x7473, 0x2620, 0x4620, 0x6172, 0x6967, 0x656c, 0x7620, 
+0x6469, 0x6f65, 0x7720, 0x7461, 0x7265, 0x616d, 0x6b72, "\000" 
+    IDC_COMBO2, 0x403, 31, 0
+0x6f52, 0x7562, 0x7473, 0x2620, 0x6553, 0x696d, 0x662d, 0x6172, 0x6967, 
+0x656c, 0x7720, 0x7461, 0x7265, 0x616d, 0x6b72, "\000" 
+    IDC_COMBO2, 0x403, 37, 0
+0x6f52, 0x7562, 0x7473, 0x462c, 0x6172, 0x6967, 0x656c, 0x2620, 0x4420, 
+0x6769, 0x7469, 0x6c61, 0x6620, 0x6e69, 0x6567, 0x7072, 0x6972, 0x746e, 
+"\000" 
+    IDC_WMCBGEN, 0x403, 38, 0
+0x6547, 0x656e, 0x6172, 0x6574, 0x6320, 0x646f, 0x6265, 0x6f6f, 0x206b, 
+0x6f66, 0x2072, 0x5156, 0x7720, 0x7461, 0x7265, 0x616d, 0x6b72, 0x6e69, 
+0x0067, 
+    IDC_WMCBGEN, 0x403, 42, 0
+0x6547, 0x656e, 0x6172, 0x6574, 0x6320, 0x646f, 0x6265, 0x6f6f, 0x206b, 
+0x6f66, 0x2072, 0x4344, 0x2d54, 0x5156, 0x7720, 0x7461, 0x7265, 0x616d, 
+0x6b72, 0x6e69, 0x0067, 
+    0
+END
+
+IDD_IMPROATTACK DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 13, 0
+0x4943, 0x2846, 0x3533, 0x2a32, 0x3832, 0x2938, "\000" 
+    IDC_COMBO1, 0x403, 14, 0
+0x4351, 0x4649, 0x3128, 0x3637, 0x312a, 0x3434, 0x0029, 
+    IDC_COMBO1, 0x403, 13, 0
+0x4953, 0x2846, 0x3533, 0x2a32, 0x3432, 0x2930, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Video Compression & Watermarking\n\nMy\n\n\nMy.Document\nMy Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "视频编解码器"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_Encode               "编码图像序列\n编码"
+    ID_Decode               "解码压缩码流\n解码"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SAVWMARK             "保存提取的水印"
+    ID_SAVEMULTIMARK        "保存多重水印"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\视频编解码器.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
